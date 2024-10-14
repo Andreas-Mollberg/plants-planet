@@ -153,8 +153,13 @@ section.featured-plants .plant a:hover {
 section.plants-list .plants {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 1.5rem;
+    gap: 1.5rem; 
     margin-top: 2rem;
+    padding: 0 2rem; 
+}
+
+section.plants-list h2{
+    text-align: center;
 }
 
 section.plants-list .plant {
@@ -164,13 +169,35 @@ section.plants-list .plant {
     padding: 1rem;
     transition: transform 0.3s ease-in-out;
     text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 section.plants-list .plant img {
     border-radius: 8px;
     margin-bottom: 1rem;
     width: 100%; 
+    height: 250px; 
+    object-fit: cover;
 }
+
+section.plants-list .plant h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+section.plants-list .plant a {
+    color: #636762;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+section.plants-list .plant a:hover {
+    text-decoration: underline;
+}
+
 
 section.about{
     margin-top: 2rem;

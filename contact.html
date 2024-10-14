@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact - Plant Planet</title>
+    <link rel="stylesheet" href="/css/style-v3.css">
 </head>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Contact Us</h2>
+    </div>
+</section>
+
 <body>
-    
+    <header>
+        <div class="logo">
+            <h1>Plant Planet</h1>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/plants.html">Plants</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search..." />
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <div class="container">
+                <h2>Contact Information</h2>
+                <p>For inquiries and more information, please reach out to us:</p>
+                <p>Email: <a href="mailto:info@plantplanet.com">info@plantplanet.com</a></p>
+                <p>Phone: +46 123 456 789</p>
+                <p>Address: 554 49 Jönköping, Sweden</p>
+            </div>
+        </section>
+
+        <section class="find-us">
+            <h2>Find Us</h2>
+            <div class="container"> 
+                <div class="map-address">
+                    <div class="map">
+                        <img src="http://placehold.it/1200x800?text=Map" alt="Map">
+                    </div>
+                    <div class="address">
+                        <p>Visit our store in Jönköping. We offer help with all your plant needs.</p>
+                        <p>Plant Planet<br>554 49 Jönköping<br>Sweden</p>
+                        <p><a href="#">Directions »</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plant Planet. &mdash; All rights reserved.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+
 </body>
+
 </html>
