@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    background: #342f2f95;
+    color: #333;
+}
+
+header {
+    background: url(/img/ivy.jpg) no-repeat center center/cover;
+    color: #fff;
+    padding: 2rem 0;
+    position: relative;
+    text-align: center;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+}
+
+header h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+nav ul {
+    max-width: 1200px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 2;
+    margin: auto;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about p {
+    color: #2c3e50; 
+    font-size: 1.1rem; 
+    font-weight: 400;  
+    background-color: rgba(255, 255, 255, 0.95); 
+    padding: 10px; 
+    border-radius: 5px; 
+    line-height: 1.6; 
+}
+
+.about, .featured-plants, .find-us {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+}
+
+.featured-plants .plants {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.featured-plants .plant {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #e0e0e0;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.featured-plants .plant:hover {
+    transform: scale(1.02);
+}
+
+.featured-plants .plant img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+.featured-plants .plant h3 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.featured-plants .plant p {
+    margin: 0.8rem 0;
+}
+
+.featured-plants .plant a {
+    text-decoration: none;
+    color: #006400;
+    font-weight: bold;
+}
+
+.featured-plants .plant a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-plants .plants {
+        flex-direction: column;
+    }
+
+    .featured-plants .plant {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1rem; 
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .map-address{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .map-address .map{
+        width: 40%;
+        margin-right: 1rem;
+    }
+
+    .map-address address{
+        width: 60%;
+    }
+}

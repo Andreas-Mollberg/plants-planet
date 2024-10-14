@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="/css/style-v3.css">
+</head>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Welcome to <span>Plant Planet</span></h2>
+    </div>
+</section>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Plant Planet</h1>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/plants.html">Plants</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search..." />
+            <button><i class="fas fa-search"></i></button>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="featured-plants">
+            <h2>Featured Plants</h2>
+            <div class="plants">
+                <div class="plant">
+                    <img src="/img/orchid.jpg" alt="Orchid">
+                    <p><a href="orchid.html">Orchids »</a></p>
+                </div>
+                <div class="plant">
+                    <img src="/img/hibiscus.jpg" alt="Hibiscus">
+                    <p><a href="hibiscus.html">Hibiscuses »</a></p>
+                </div>
+                <div class="plant">
+                    <img src="/img/poppy.jpg" alt="Poppy">
+                    <p><a href="poppy.html">Poppies »</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>
+                        Plant planet is an online index of plants with images, information, and insights.<br>
+                        We are a group of passionate hobbyists that have embraced our green thumbs.
+                    </p>
+                </div>
+                <img src="/img/potted-plant.png" alt="">
+            </div>
+
+
+        </section>
+
+        <section class="find-us">
+            <h2>Find Us</h2>
+            <div class="container"> 
+                <div class="map-address">
+                    <div class="map">
+                        <img src="http://placehold.it/1200x800?text=Map" alt="Map">
+                    </div>
+                    <div class="address">
+                        <p>Visit our store in Jönköping. We offer help with all your plant needs.</p>
+                        <p>Plant Planet<br>554 49 Jönköping<br>Sweden</p>
+                        <p><a href="#">Directions »</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plant Planet. &mdash; All rights reserved.</p>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

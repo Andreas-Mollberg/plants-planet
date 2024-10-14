@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants - Plant Planet</title>
+    <link rel="stylesheet" href="/css/style-v3.css">
+</head>
+<body>
+    <header>
+        <h1>Plant Planet</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/plants.html">Plants</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="plants-list">
+            <h2>Our Plants</h2>
+            <div class="plants">
+                <div class="plant">
+                    <h3>Orchid</h3>
+                    <img src="/img/orchid.jpg" alt="Orchid">
+                    <p class="info">Orchids are plants that belong to the family Orchidaceae.</p>
+                    <p><a href="orchid.html">Read more »</a></p>
+                </div>
+                <div class="plant">
+                    <h3>Hibiscus</h3>
+                    <img src="/img/hibiscus.jpg" alt="Hibiscus">
+                    <p class="info">Hibiscus is a genus of flowering plants in the mallow family, Malvaceae.</p>
+                    <p><a href="hibiscus.html">Read more »</a></p>
+                </div>
+                <div class="plant">
+                    <h3>Poppy</h3>
+                    <img src="/img/poppy.jpg" alt="Poppy">
+                    <p class="info">A poppy is a flowering plant in the subfamily Papaveroideae of the family Papaveraceae.</p>
+                    <p><a href="poppy.html">Read more »</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plant Planet. &mdash; All rights reserved.</p>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+    
+</body>
+</html>
